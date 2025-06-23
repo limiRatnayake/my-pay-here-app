@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-payHere-app",
+            "outputPath": "dist/my-pay-here-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -38,7 +38,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/my-payHere-app/",
               "budgets": [
                 {
                   "type": "initial",
@@ -54,7 +53,6 @@
               "outputHashing": "all"
             },
             "development": {
-              "baseHref": "/",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
