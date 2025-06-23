@@ -1,4 +1,33 @@
-<div style="text-align: center; margin-top: 50px;">
-  <h1>🚀 My PayHere App is Live!</h1>
-  <p>If you're seeing this, GitHub Pages is working ✅</p>
-</div>
+<h2>PayHere Checkout Form</h2>
+<form method="post" action="https://sandbox.payhere.lk/pay/preapprove">
+  <!-- Merchant details -->
+  <input type="hidden" name="merchant_id" value="1229429"> <!-- Replace with your Merchant ID -->
+  <input type="hidden" name="return_url" value="https://support.payhere.lk">
+  <input type="hidden" name="cancel_url" value="https://support.payhere.lk">
+  <input type="hidden" name="notify_url"
+    value="https://payment-dev.delivergate.com/payhere/payment-notify?x-tenant-code=subway">
+
+  <br><br>
+  <strong>Item Details</strong><br>
+  <input type="text" name="order_id" value="FK001"><br>
+  <input type="text" name="items" value="Door bell wireless"><br>
+  <input type="text" name="currency" value="LKR"><br>
+  <!-- <input type="text" name="amount" value="225"><br> -->
+
+  <br><br>
+  <strong>Customer Details</strong><br>
+  <input type="text" name="first_name" value="Saman"><br>
+  <input type="text" name="last_name" value="Perera"><br>
+  <input type="text" name="email" value="samanp@gmail.com"><br>
+  <input type="text" name="phone" value="0771234567"><br>
+  <input type="text" name="address" value="No.1, Galle Road"><br>
+  <input type="text" name="city" value="Colombo"><br>
+  <input type="hidden" name="country" value="Sri Lanka"><br>
+  <input type="text" name="custom_1" value="1218"><br>
+
+  <!-- Hash value (replace with your generated hash) -->
+  <input type="hidden" name="hash" value="6263479231884D597FD4A029E92FE256"> <!-- Replace with your generated hash -->
+
+  <br><br>
+  <input type="submit" value="Buy Now">
+</form>
