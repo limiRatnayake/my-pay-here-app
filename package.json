@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:gh": "ng build --output-path=dist/my-payhere-app/browser --base-href /my-payhere-app/",
+    "deploy": "npx angular-cli-ghpages --dir=dist/my-payhere-app/browser"
   },
   "private": true,
   "dependencies": {
